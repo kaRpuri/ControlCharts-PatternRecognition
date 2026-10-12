@@ -1,0 +1,23 @@
+# Default configuration for `controlcharts`.
+
+training:
+  epochs: 60
+  batch_size: 32
+  test_size: 0.10
+  seed: 101
+  early_stopping_patience: 3
+  verbose: 0
+
+paths:
+  dataset: data/synthetic_control.csv
+  model: models/control_charts.keras
+  assets: assets
+
+# Drawing tolerances for the sample measurements in data/.
+specifications:
+  diameter:
+    usl: 40.1
+    lsl: 39.9
+  width:
+    usl: 22.1
+    lsl: 21.9
